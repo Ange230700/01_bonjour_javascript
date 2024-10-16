@@ -3,4 +3,4 @@ function sayHello(firstName) {
     console.log(message);
 }
 
-sayHello(); // expected: Bonjour undefined !
+sayHello("Beyoncé");
