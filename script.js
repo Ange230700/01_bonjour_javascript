@@ -5,7 +5,7 @@ function sayHello(firstName, hour) {
     }
 
     const message = `${greeting} ${firstName} !`;
-    console.log(message);
+    document.querySelector('h1').innerText = message;
 }
 
 sayHello(`Beyoncé`, 11); // expected: Bonjour Beyoncé !
