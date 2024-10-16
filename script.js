@@ -1,7 +1,6 @@
-function sayHello() {
-    const firstName = "Beyoncé";
+function sayHello(firstName) {
     const message = `Bonjour ${firstName} !`;
     console.log(message);
 }
 
-sayHello();
+sayHello(); // expected: Bonjour undefined !
