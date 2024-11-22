@@ -1,14 +1,11 @@
-const firstName = prompt("Quel est votre prénom ?");
+// script.js
 
-function sayHello(firstName, hour) {
-    let greeting = "Bonjour";
-    if (hour >= 18) {
-        greeting = "Bonsoir";
-    }
+import sayHello from "./javascript/functions/sayHello.js";
 
-    const message = `${greeting} ${firstName} !`;
-    document.querySelector('h1').innerText = message;
-}
+const submitButton = document.getElementById("submitButton");
 
-const hour = new Date().getHours();
-sayHello(firstName, hour); // dynamic use of the function by passing the current hour with new Date().getHours()
+submitButton.addEventListener("click", () => {
+  const firstNameInput = document.getElementById("firstNameInput");
+  const firstName = firstNameInput.value.trim() || "Inconnu";
+  sayHello(firstName, new Date().getHours());
+});
