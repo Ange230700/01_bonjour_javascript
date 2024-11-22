@@ -14,7 +14,7 @@
   gap: var(--small-spacing);
 }
 
-#firstNameInput {
+#first-name-input {
   padding: var(--small-spacing);
   border: 1px solid var(--primary-color-shade-4);
   border-radius: var(--standard-border-radius);
@@ -23,7 +23,7 @@
   color: var(--primary-color-shade-1);
 }
 
-#submitButton {
+#submit-button {
   padding: var(--small-spacing) var(--medium-spacing);
   background-color: var(--primary-color-shade-6);
   color: var(--primary-color-shade-1);
@@ -34,6 +34,6 @@
   transition: background-color 0.3s;
 }
 
-#submitButton:hover {
+#submit-button:hover {
   background-color: var(--primary-color-shade-5);
 }
