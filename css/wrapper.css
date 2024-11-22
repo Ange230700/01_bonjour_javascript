@@ -1,0 +1,39 @@
+/* css/wrapper.css */
+
+#wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.input-container {
+  margin-top: var(--medium-spacing);
+  display: flex;
+  gap: var(--small-spacing);
+}
+
+#firstNameInput {
+  padding: var(--small-spacing);
+  border: 1px solid var(--primary-color-shade-4);
+  border-radius: var(--standard-border-radius);
+  font-size: var(--standard-font-size);
+  background-color: var(--primary-color-shade-8);
+  color: var(--primary-color-shade-1);
+}
+
+#submitButton {
+  padding: var(--small-spacing) var(--medium-spacing);
+  background-color: var(--primary-color-shade-6);
+  color: var(--primary-color-shade-1);
+  border: none;
+  border-radius: var(--standard-border-radius);
+  cursor: pointer;
+  font-size: var(--standard-font-size);
+  transition: background-color 0.3s;
+}
+
+#submitButton:hover {
+  background-color: var(--primary-color-shade-5);
+}
